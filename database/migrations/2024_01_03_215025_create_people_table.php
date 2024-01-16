@@ -6,9 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         Schema::create('people', function (Blueprint $table) {
@@ -28,3 +26,5 @@ return new class extends Migration
         Schema::dropIfExists('people');
     }
 };
+
+

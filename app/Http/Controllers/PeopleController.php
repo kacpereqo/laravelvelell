@@ -12,12 +12,6 @@ class PeopleController extends Controller
         return response()->json(People::all(), 200);
     }
 
-    public function store(Request $request)
-    {
-        $people = People::create($request->all());
-        return response()->json($people, 201);
-    }
-
     public function show($id)
     {
         $people = People::find($id);
